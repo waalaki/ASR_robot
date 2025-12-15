@@ -387,7 +387,7 @@ def send_long_text(chat_id, text, reply_id, uid, action="Transcript"):
             
 ✅ Faster and high accurate
 ✅ Automatically detects the spoken language
-✅ Supports large audio & video files up to 2GB
+✅ Supports audio & video files up to 2GB
 ✅ Offers advanced translation & summarization
 ✅ Powered by Gemini AI for high-quality results
 
