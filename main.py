@@ -81,7 +81,7 @@ def get_user_mode(uid):
 
 def convert_to_wav(input_path):
     output_path = f"{input_path}.wav"
-    command = ["ffmpeg", "-i", input_path, "-ac", "1", "-ar", "16000", output_path, "-y"]
+    command = ["ffmpeg", "-i", input_path, "-ac", "1", "-ar", "8000", output_path, "-y"]
     subprocess.run(command, check=True, stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL)
     return output_path
 
