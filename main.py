@@ -324,7 +324,7 @@ def handle_media(message):
     if not media:
         return
     if getattr(media, 'file_size', 0) > MAX_UPLOAD_SIZE:
-        bot.reply_to(message, f"Just send me a file less than {MAX_UPLOAD_MB}MB 😎")
+        bot.reply_to(message, f"Just send me a file less than {MAX_UPLOAD_MB}MB 😎 or use @MediaToTextBot")
         return
     bot.send_chat_action(message.chat.id, 'typing')
     file_path = os.path.join(DOWNLOADS_DIR, f"temp_{message.id}_{media.file_unique_id}")
@@ -372,7 +372,14 @@ def send_long_text(chat_id, text, reply_id, uid, action="Transcript"):
             fname = os.path.join(DOWNLOADS_DIR, f"{action}.txt")
             with open(fname, "w", encoding="utf-8") as f:
                 f.write(text)
-            sent = bot.send_document(chat_id, open(fname, 'rb'), caption="Open this file and copy the text inside 👍", reply_to_message_id=reply_id)
+            sent = bot.send_document(chat_id, open(fname, 'rb'), caption="Open this file and copy the text inside 👍\n\n✅ Faster and high accurate
+✅ Automatically detects the spoken language
+✅ Supports large audio & video files up to 2GB
+✅ Offers advanced translation & summarization
+✅ Powered by Gemini AI for high-quality results
+
+👉 Try the @MediaToTextBot now for a better experience.
+", reply_to_message_id=reply_id)
             os.remove(fname)
             return sent
     return bot.send_message(chat_id, text, reply_to_message_id=reply_id)
