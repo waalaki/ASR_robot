@@ -22,7 +22,7 @@ REQUIRED_CHANNEL = os.environ.get("REQUIRED_CHANNEL", "")
 DOWNLOADS_DIR = os.environ.get("DOWNLOADS_DIR", "./downloads")
 GEMINI_KEY = os.environ.get("GEMINI_KEY", "")
 GEMINI_KEYS = os.environ.get("GEMINI_KEYS", GEMINI_KEY)
-GEMINI_MODEL = "gemini-2.5-flash"
+GEMINI_MODEL = "gemma-3-12b"
 MAX_AUDIO_CHUNK_S = 60
 
 os.makedirs(DOWNLOADS_DIR, exist_ok=True)
