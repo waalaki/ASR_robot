@@ -365,8 +365,8 @@ def handle_media(message):
     if not media:
         return
     duration = getattr(media, 'duration', None)
-    if duration and duration > 600:
-        bot.reply_to(message, "Just send me audio under 10 minutes or use @MediaToTextBot for best 💗")
+    if duration and duration > 1800:
+        bot.reply_to(message, "Just send me audio under 30 minutes or use @MediaToTextBot for best 💗")
         return
     if getattr(media, 'file_size', 0) > MAX_UPLOAD_SIZE:
         bot.reply_to(message, f"Just send me a file less than {MAX_UPLOAD_MB}MB 😎 or use @MediaToTextBot")
