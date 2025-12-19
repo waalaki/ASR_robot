@@ -367,10 +367,10 @@ def handle_media(message):
         return
     duration = getattr(media, 'duration', None)
     if duration and duration > 600:
-        bot.reply_to(message, "Faylkan wuu ka dheer yahay 10 daqiiqo. Fadlan isticmaal @MediaToTextBot si aad u hesho natiijo sax ah; wuxuu taageeraa ilaa 9 saacadood iyo upload ilaa 2GB.")
+        bot.reply_to(message, "Just send me audio under 10 minutes or use @MediaToTextBot for best 💗")
         return
     if getattr(media, 'file_size', 0) > MAX_UPLOAD_SIZE:
-        bot.reply_to(message, f"Just send me a file less than {MAX_UPLOAD_MB}MB 😎")
+        bot.reply_to(message, f"Just send me a file less than {MAX_UPLOAD_MB}MB 😎 or use @MediaToTextBot")
         return
     bot.send_chat_action(message.chat.id, 'typing')
     file_path = os.path.join(DOWNLOADS_DIR, f"temp_{message.id}_{media.file_unique_id}")
