@@ -3,3 +3,4 @@ requests
 Flask
 SpeechRecognition
 pydub
+vosk
