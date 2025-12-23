@@ -237,7 +237,7 @@ def send_long_text(chat_id, text, reply_id, uid, action="Transcript"):
 
 @flask_app.route("/", methods=["GET"])
 def index():
-    return "Bot Running", 200
+    return "waxaan ku ordayaa render wali online ahay😤", 200
 
 @flask_app.route(WEBHOOK_PATH, methods=['POST'])
 def webhook():
