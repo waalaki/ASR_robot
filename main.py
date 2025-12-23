@@ -4,8 +4,8 @@ import logging
 from flask import Flask, request, abort
 import telebot
 
-TOKEN = os.environ.get("BOT_TOKEN", "8303813448:AAFNgDIB7wrBDmq8ls0If_T1TnwzQqYr5q4")
-WEBHOOK_URL = os.environ.get("WEBHOOK_URL", "https://soodajiye-bot.onrender.com")
+TOKEN = os.environ.get("BOT_TOKEN", "7770743573:AAGPd76r60kDr7-XqI5SQaAi-MKhh7b-H-g")
+WEBHOOK_URL = os.environ.get("WEBHOOK_URL", "https://media-to-text-bot-qgyq.onrender.com")
 MEDIA_TO_TEXT_BOT = "https://t.me/MediaToTextBot"
 
 bot = telebot.TeleBot(TOKEN, threaded=False)
