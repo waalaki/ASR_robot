@@ -49,7 +49,7 @@ LANGS = [
 ("🇺🇿 O'zbekcha","uz"), ("🇵🇭 Tagalog","tl"), ("🇵🇹 Português","pt")
 ]
 
-ADS_TEXT = """Just send me a file less than 20MB 😎 or use 👉 @MediaToTextBot
+ADS_TEXT = """Just send me a file less than 20MB 😎 or use @MediaToTextBot
 ━━━━━━━━━━━━━━━━━━
 
 ❌ Stop using @Media_transcriber_Bot
