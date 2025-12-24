@@ -325,7 +325,7 @@ def transcribe_file(file_path, language=None):
         
         cmd = [
             'ffmpeg', '-y', '-ss', str(start), '-t', str(chunk_sec),
-            '-i', file_path, '-vn', '-ar', '16000', '-ac', '1', tmp_flac
+            '-i', file_path, '-vn', '-ar', '17000', '-ac', '1', tmp_flac
         ]
         subprocess.run(cmd, stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL)
         
