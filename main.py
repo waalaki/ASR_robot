@@ -33,7 +33,7 @@ GEMINI_KEYS = os.environ.get("GEMINI_KEYS", GEMINI_KEY)
 GEMINI_MODEL = "gemini-2.5-flash"
 
 MAX_WORKERS = 5
-CHUNK_SECONDS = 60
+CHUNK_SECONDS = 300
 
 VOSK_MODEL_PATH = os.environ.get("VOSK_MODEL_PATH", "./vosk-model-small-en-us-0.15")
 VOSK_ZIP_URL = os.environ.get("VOSK_ZIP_URL", "https://alphacephei.com/vosk/models/vosk-model-small-en-us-0.15.zip")
