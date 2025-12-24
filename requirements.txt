@@ -3,4 +3,4 @@ requests
 Flask
 SpeechRecognition
 pydub
-vosk==0.3.45
+vosk
