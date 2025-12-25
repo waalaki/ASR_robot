@@ -31,7 +31,7 @@ ADMIN_ID = 6964068910
 
 MAX_WORKERS = 3
 CHUNK_SECONDS = 300
-SILENCE_MS = 200
+SILENCE_MS = 500
 
 os.makedirs(DOWNLOADS_DIR, exist_ok=True)
 logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
