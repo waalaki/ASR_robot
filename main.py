@@ -169,7 +169,7 @@ def build_action_keyboard(text_len):
     btns = []
     if text_len > 1000:
         btns.append([InlineKeyboardButton("Get Summarize", callback_data="summarize_menu|")])
-    btns.append([InlineKeyboardButton("⭐️ Better Quality & Best accuracy", url="https://t.me/MediaToTextBot")])
+    #btns.append([InlineKeyboardButton("⭐️ Better Quality & Best accuracy", url="https://t.me/MediaToTextBot")])
     return InlineKeyboardMarkup(btns)
 
 def build_lang_keyboard(origin):
