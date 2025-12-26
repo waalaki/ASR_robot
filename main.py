@@ -438,7 +438,7 @@ def handle_media(message):
             return
         text = transcribe_file(dest_path, language=lang)
         if not text:
-            raise ValueError("Empty response")
+            raise ValueError("I don't understand this voice 😓")
         sent = send_long_text(message.chat.id, text, message.id, message.from_user.id)
         if sent:
             user_transcriptions.setdefault(message.chat.id, {})[sent.message_id] = {"text": text, "origin": message.id}
