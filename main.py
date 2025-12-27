@@ -183,7 +183,7 @@ def transcribe_with_gemini(file_path, mime_type, language=None):
 
 def build_action_keyboard(text_len):
     btns = []
-    if text_len > 1000:
+    if text_len > 2000:
         btns.append([InlineKeyboardButton("Get Summarize", callback_data="summarize_menu|")])
     return InlineKeyboardMarkup(btns)
 
